@@ -1,0 +1,241 @@
+:root {
+    --primary-color: #004aad;
+    --secondary-color: #f8f9fa;
+    --text-color: #212529;
+    --font-family: 'Inter', sans-serif;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.otf');
+}
+
+* {
+    font-family: 'Inter';
+    box-sizing: border-box;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.nav-bar {
+    z-index: 5000;
+    opacity: 0;
+    transition: .5s opacity;
+}
+
+.nav-bar ul li a:hover,
+.nav-bar ul li a.active {
+    color: var(--primary-color) !important;
+}
+
+.nav-bar.active {
+    opacity: 1;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border-color: var(--primary-color) !important;
+}
+
+.auto-typed .typed-cursor {
+    font-size: 15px;
+    color: black;
+}
+
+.display-1 {
+    font-weight: bolder;
+}
+
+.display-3 {
+    font-size: 6.5rem !important;
+    font-weight: 800 !important;
+    line-height: 1.2;
+    opacity: .1;
+}
+
+.stroke {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+}
+
+.my-card {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    height: 450px;
+    transition: all .3s;
+}
+
+.my-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px var(--primary-color) !important;
+    /* sombra azul no hover */
+
+}
+
+.service-icon {
+    width: 43px;
+    height: 43px;
+}
+
+.fa-2x {
+    font-size: 1.2em !important;
+}
+
+.burger-button-container {
+    flex-direction: column;
+    cursor: pointer;
+    width: 35px;
+    height: 30px;
+    justify-content: space-between;
+}
+
+.burger-button-container div {
+    width: 35px;
+    height: 3px;
+    background-color: #222;
+}
+
+/* nav mobile */
+.nav-mobile-container {
+    position: fixed;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-mobile-container.active {
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.nav-mobile-container ul li a {
+    font-size: 30px;
+}
+
+/* swiper nos cards */
+.swiper-button-next,
+.swiper-button-prev {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: #fff;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 16px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--primary-color);
+    /* cor que você quiser */
+}
+
+/* card information */
+.card-information-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.card-information-overlay.active {
+    z-index: 19999;
+    opacity: 1;
+}
+
+.card-information {
+    position: fixed;
+    top: 0;
+    z-index: 20000;
+    width: 100vw;
+    background-color: white;
+    height: 0px;
+    transition: height 0.3s ease-in-out;
+    overflow: hidden;
+  
+}
+
+.card-information.active {
+    height: 80vh;
+}
+
+
+.cardbody-information-text{
+    position: relative;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    height: 100%;
+    margin-top: 20px;
+    padding: 3px 0px;
+}
+
+.cardbody-information-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 2px;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+.cardbody-githubrepository {
+    border-radius: 20px 20px 0px 0px;
+}
+
+@keyframes moveDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* chevron animation */
+.animate-down {
+    animation: moveDown 1.5s ease-in-out infinite;
+}
+
+@media (max-width: 1200px) {
+    .display-3 {
+        font-size: calc(2.125rem + 10.5vw) !important
+    }
+}
