@@ -2,8 +2,8 @@
 <div {{ $attributes->merge(['class' => 'my-card rounded p-4 shadow-sm rounded']) }}>
     <div class="my-card-header d-flex flex-row align-items-center">
         <div
-            class="my-card-icon bg-primary py-2 px-3 rounded-circle text-white d-flex align-items-center justify-content-center service-icon ">
-            <i class="{{ $icon }} fs-3"></i>
+            class="my-card-icon bg-primary p-4 rounded-circle text-white d-flex align-items-center justify-content-center service-icon ">
+            <i class="{{ $icon }} fs-4"></i>
         </div>
         <h5 class="my-card-title my-2 text-center ms-2">
             <strong>{{ $title }}</strong>
