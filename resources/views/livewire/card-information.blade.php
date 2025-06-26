@@ -2,7 +2,20 @@
     <div class="card-information-overlay {{ $cardData ? 'active' : '' }}" wire:click="closeCard"></div>
     <div class="card-information overflow-auto {{ $cardData ? 'active' : '' }}">
         <div class="card-header position-relative d-flex justify-content-between align-items-center my-3 mx-5">
-            <h3 class="mx-auto text-primary text-uppercase"><strong>{{ $cardData->title ?? '' }}</strong></h3>
+            <div class="mx-auto">
+                <h3 class="cardheader-cardTitle text-primary text-uppercase text-center">
+                    <strong>{{ $cardData->title ?? '' }}</strong>
+                </h3>
+                <p class="text-center">
+                    @if ($cardData)
+                        @foreach ($cardData->technologies as $technology)
+                            <span class="btn btn-sm mt-2 rounded-pill" style="background-color:#0659c5">
+                                <strong class="text-white">{{ $technology }}</strong>
+                            </span>
+                        @endforeach
+                    @endif
+                </p>
+            </div>
             <i class="close-card-information fa-solid fa-xmark fs-2" wire:click="closeCard" style="cursor: pointer"></i>
         </div>
         <div class="card-body">
@@ -29,14 +42,18 @@
                         <p class="text-uppercase"><i class="fas fa-trophy" style="color: #919191;"></i>
                             <strong>Resultados</strong>
                         </p>
-                        <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
-                            libero laborum exercitationem placeat pariatur illum minus, fuga nihil culpa sapiente harum
+                        <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Temporibus
+                            libero laborum exercitationem placeat pariatur illum minus, fuga nihil culpa sapiente
+                            harum
                             molestias. Maxime consequatur provident, beatae nisi sunt maiores expedita?</p>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="" target="_blank" class="cardbody-githubrepository position-absolute bottom-0 bg-primary p-2 text-light text-center" style="width: 300px; left: 50%; transform: translateX(-50%); text-decoration: none;">
+        <a href="" target="_blank"
+            class="cardbody-githubrepository position-absolute bottom-0 bg-primary p-2 text-light text-center"
+            style="width: 300px; left: 50%; transform: translateX(-50%); text-decoration: none;">
             <i class="fab fa-github"></i> <span><strong>Repositório no GitHub</strong></span>
         </a>
     </div>

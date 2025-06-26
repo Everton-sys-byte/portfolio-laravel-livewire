@@ -193,6 +193,19 @@
     height: 80vh;
 }
 
+.cardheader-cardTitle {
+    position: relative;
+}
+
+.cardheader-cardTitle::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+}
 
 .cardbody-information-text{
     position: relative;
