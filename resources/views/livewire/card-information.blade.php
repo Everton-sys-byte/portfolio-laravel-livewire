@@ -4,7 +4,7 @@
         <div class="card-header position-relative d-flex justify-content-between align-items-center my-3 mx-5">
             <div class="mx-auto">
                 <h3 class="cardheader-cardTitle text-primary text-uppercase text-center">
-                    <strong>{{ $cardData->title ?? '' }}</strong>
+                    <strong> <i class="{{$cardData->icon ?? ""}}"></i> {{ $cardData->title ?? '' }}</strong>
                 </h3>
                 <p class="text-center">
                     @if ($cardData)
