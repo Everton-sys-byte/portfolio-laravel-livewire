@@ -15,11 +15,12 @@
                         @endforeach
                     @endif
                 </p>
+                
             </div>
             <i class="close-card-information fa-solid fa-xmark fs-2" wire:click="closeCard" style="cursor: pointer"></i>
         </div>
         <div class="card-body">
-            <div class="row mx-auto d-flex align-items-center justify-content-center" style="height: 100%; width: 80%;">
+            <div class="row mx-auto d-flex align-items-center justify-content-center " style="height: 100%; width: 80%;">
                 <div class="col-12 py-2 py-lg-0">
                     <div class="cardbody-information-text ">
                         <p class="text-uppercase"><i class="fa-solid fa-bullseye" style="color: #e74c3c;"></i>
@@ -52,7 +53,7 @@
             </div>
         </div>
         <a href="" target="_blank"
-            class="cardbody-githubrepository position-absolute bottom-0 bg-primary p-2 text-light text-center"
+            class="cardbody-githubrepository position-absolute bg-primary p-2 text-light text-center d-none d-lg-block bottom-0"
             style="width: 300px; left: 50%; transform: translateX(-50%); text-decoration: none;">
             <i class="fab fa-github"></i> <span><strong>Repositório no GitHub</strong></span>
         </a>
