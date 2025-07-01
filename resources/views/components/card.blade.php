@@ -14,7 +14,7 @@
         {{ $slot }}
     </div>
     @if (!empty($technologies))
-        <div class="my-2 small">
+        <div class="my-2 small d-none d-lg-block">
             @foreach ($technologies as $technology)
                 <span class="btn btn-sm mt-2 rounded-pill" style="background-color:#0659c5"><strong class="text-white"> {{ $technology }}</strong></span>
             @endforeach
