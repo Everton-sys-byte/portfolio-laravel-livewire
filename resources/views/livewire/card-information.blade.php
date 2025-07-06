@@ -35,7 +35,7 @@
                             <strong>Solução</strong>
                         </p>
                         <p class="text-secondary">
-                            {{$cardData->solutions ?? ''}}
+                            {{$cardData->solution ?? ''}}
                         </p>
                     </div>
 
