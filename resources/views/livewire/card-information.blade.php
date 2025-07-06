@@ -34,20 +34,18 @@
                         <p class="text-uppercase"><i class="fas fa-lightbulb" style="color: orange;"></i>
                             <strong>Solução</strong>
                         </p>
-                        <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-                            excepturi ullam provident voluptatem nulla deleniti nam quos earum, asperiores inventore
-                            magni minus? Fuga ea facere est voluptatem, pariatur molestiae quas.</p>
+                        <p class="text-secondary">
+                            {{$cardData->solutions ?? ''}}
+                        </p>
                     </div>
 
                     <div class="cardbody-information-text">
                         <p class="text-uppercase"><i class="fas fa-trophy" style="color: #919191;"></i>
                             <strong>Resultados</strong>
                         </p>
-                        <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Temporibus
-                            libero laborum exercitationem placeat pariatur illum minus, fuga nihil culpa sapiente
-                            harum
-                            molestias. Maxime consequatur provident, beatae nisi sunt maiores expedita?</p>
+                        <p class="text-secondary">
+                            {{$cardData->results}}
+                        </p>
                     </div>
                 </div>
             </div>
