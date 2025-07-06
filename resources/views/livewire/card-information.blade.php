@@ -46,24 +46,6 @@
                         </p>
                         <p class="text-secondary">
                             {{ $cardData->results ?? '' }}
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sint, itaque similique
-                            blanditiis iste facere commodi, consequatur quasi quam dolores corrupti quisquam delectus
-                            voluptatem minus aspernatur inventore hic obcaecati sapiente.
-                            Deleniti veniam eaque inventore velit ipsum qui. Nulla animi iste doloribus, cupiditate
-                            aliquid saepe minus distinctio ab voluptatem tempore, ut laboriosam consectetur modi
-                            obcaecati eos quas? Aliquid consequatur error quas?
-                            Ipsa eveniet laboriosam enim hic qui cupiditate earum beatae tempore odio, culpa nulla
-                            sequi, quod provident tempora odit. Odit sint optio facere nostrum voluptatum libero
-                            asperiores nihil architecto repellat iste.
-                            Beatae aperiam cupiditate nobis blanditiis, nesciunt fugit consequuntur dolores eum ratione,
-                            repellat eius atque qui reprehenderit id! Quasi eaque nostrum explicabo excepturi beatae
-                            cumque similique perferendis nemo, tempore, officiis dolore.
-                            Quam, itaque voluptas non dolorum mollitia aliquid reiciendis numquam molestiae vero omnis
-                            est nemo cum laudantium possimus necessitatibus doloribus unde sunt voluptatum eligendi esse
-                            incidunt natus ullam soluta beatae! Beatae?
-                            Odio doloremque, dolores natus cumque voluptates, facere totam nisi sed voluptas atque quae
-                            quaerat esse ullam obcaecati maiores sapiente recusandae repellat veritatis? In eos eligendi
-                            sapiente at dicta aut officia!
                         </p>
                     </div>
                 </div>
