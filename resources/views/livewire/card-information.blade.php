@@ -44,7 +44,7 @@
                             <strong>Resultados</strong>
                         </p>
                         <p class="text-secondary">
-                            {{$cardData->results}}
+                            {{$cardData->results ?? ''}}
                         </p>
                     </div>
                 </div>
