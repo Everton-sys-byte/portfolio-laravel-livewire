@@ -50,7 +50,7 @@
                 </div>
             </div>
         </div>
-        <a href="" target="_blank"
+        <a href="{{$cardData->github_url}}" target="_blank"
             class="cardbody-githubrepository position-absolute bg-primary p-2 text-light text-center d-none d-lg-block bottom-0"
             style="width: 300px; left: 50%; transform: translateX(-50%); text-decoration: none;">
             <i class="fab fa-github"></i> <span><strong>Repositório no GitHub</strong></span>
