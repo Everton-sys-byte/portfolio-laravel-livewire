@@ -1,7 +1,7 @@
 <div>
     @livewire('card-information')
     <section class="home d-flex align-items-center justify-content-around bg-primary position-relative" id="home"
-        style="min-height: 100vh;">
+        style="min-height: 100dvh;">
         <div class="row align-items-center">
             <div class="col-12 text-light text-center text-lg-start mt-3 mt-lg-0">
                 <h3>Olá, me chamo</h3>
