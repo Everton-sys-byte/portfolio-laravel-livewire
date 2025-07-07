@@ -11,7 +11,6 @@
                     <li><a href="#about" class="text-dark text-decoration-none">Sobre</a></li>
                     <li><a href="#formation" class="text-dark text-decoration-none">Formação</a></li>
                     <li><a href="#projects" class="text-dark text-decoration-none">Projetos</a></li>
-                    {{-- <li><a href="" class="text-dark text-decoration-none">Projects</a></li> --}}
                     <li><a href="#contact" class="text-dark text-decoration-none">Contato</a></li>
                 </ul>
                 <a target="_blank" href="{{ asset('documents/curriculo.pdf') }}"

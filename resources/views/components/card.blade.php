@@ -1,5 +1,5 @@
 @props(['icon', 'title', 'relevantLink', 'technologies'])
-<div {{ $attributes->merge(['class' => 'my-card rounded p-4 shadow-sm rounded']) }}>
+<div {{ $attributes->merge(['class' => 'my-card rounded p-4 shadow-sm rounded w-100']) }}>
     <div class="my-card-header d-flex flex-row align-items-center">
         <div
             class="my-card-icon bg-primary p-4 rounded-circle text-white d-flex align-items-center justify-content-center service-icon ">
@@ -10,7 +10,7 @@
         </h5>
     </div>
     <div class="card-division w-100 bg-primary my-2" style="height:.1px;"></div>
-    <div class="my-card-body text-secondary" style="height: 230px; font-size: .9rem; overflow: hidden; text-overflow: ellipsis; white-space: normal;">
+    <div class="my-card-body text-secondary py-2" style="height: 230px; font-size: .9rem; overflow: hidden; text-overflow: ellipsis; white-space: normal;">
         {{ $slot }}
     </div>
 

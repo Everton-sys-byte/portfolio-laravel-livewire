@@ -103,7 +103,7 @@
     <section class="projects container py-5 " id="projects">
         <x-section-header-title title='Projetos' />
         <!-- Swiper wrapper -->
-        <div class="swiper projectsSwiper p-5" wire:ignore>
+        <div class="swiper projectsSwiper px-3 py-4 p-lg-5" wire:ignore>
             <div class="swiper-wrapper">
                 @foreach ($projects as $project)
                     <div class="swiper-slide">
