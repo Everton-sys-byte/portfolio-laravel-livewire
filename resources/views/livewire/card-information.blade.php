@@ -20,7 +20,7 @@
             <i class="close-card-information fa-solid fa-xmark fs-2" wire:click="closeCard" style="cursor: pointer"></i>
         </div>
         <div class="card-body">
-            <div class="row mx-auto d-flex align-items-center justify-content-center py-2"
+            <div class="row mx-auto d-flex align-items-center justify-content-center py-3"
                 style="height: 100%; width: 80%;">
                 <div class="col-12 py-2 py-lg-0">
                     <div class="cardbody-information-text ">
@@ -49,12 +49,19 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 p-0 mt-3">
+                <div class="col-12 p-0 mt-3 d-flex flex-row gap-2">
                     <a href="{{ $cardData->github_url ?? '' }}" target="_blank"
                         class="cardbody-githubrepository rounded-pill  bg-primary p-2 text-light text-center px-4"
                         style="text-decoration: none;">
                         <i class="fab fa-github"></i> <span><strong>Repositório no GitHub</strong></span>
                     </a>
+                    @if ($cardData && $cardData->url)
+                        <a href="{{ asset($cardData->url) }}" target="_blank"
+                            class="cardbody-githubrepository rounded-pill  p-2 text-light text-center px-4"
+                            style="text-decoration: none; background-color: #a18712">
+                            <i class="fas fa-chart-line"></i> <span><strong>Baixar dashboard</strong></span>
+                        </a>
+                    @endif
                 </div>
             </div>
         </div>
