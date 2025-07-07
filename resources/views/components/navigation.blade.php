@@ -31,8 +31,8 @@
         <ul class="d-flex flex-column gap-4 list-unstyled m-0 text-uppercase fw-bold text-center">
             <li><a href="#home" class="text-dark text-decoration-none active">Inicio</a></li>
             <li><a href="#about" class="text-dark text-decoration-none">Sobre</a></li>
-            <li><a href="#skills" class="text-dark text-decoration-none">Formação</a></li>
-            <li><a href="#services" class="text-dark text-decoration-none">Projetos</a></li>
+            <li><a href="#formation" class="text-dark text-decoration-none">Formação</a></li>
+            <li><a href="#projects" class="text-dark text-decoration-none">Projetos</a></li>
             {{-- <li><a href="" class="text-dark text-decoration-none">Projects</a></li> --}}
             <li><a href="#contact" class="text-dark text-decoration-none">Contato</a></li>
         </ul>
