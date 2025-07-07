@@ -249,6 +249,6 @@
 
 @media (max-width: 1200px) {
     .display-3 {
-        font-size: calc(1.4rem + 10vw) !important
+        font-size: calc(1rem + 10vw) !important
     }
 }
