@@ -49,7 +49,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 p-0 mt-3 d-flex flex-row gap-2">
+                <div class="col-12 p-0 mt-3 d-flex flex-column flex-lg-row gap-2">
                     <a href="{{ $cardData->github_url ?? '' }}" target="_blank"
                         class="cardbody-githubrepository rounded-pill  bg-primary p-2 text-light text-center px-4"
                         style="text-decoration: none;">
