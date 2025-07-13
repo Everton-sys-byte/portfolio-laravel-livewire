@@ -25,16 +25,16 @@
                 </div>
                 <div class="col-12 col-lg-7 mt-3 mt-lg-0">
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-12 col-lg-6">
                             <h6>Nome: <span class="text-secondary">Everton Soares</span></h6>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-12 col-lg-6">
                             <h6>Celular: <span class="text-secondary">+55 (11) 960818682</span></h6>
                         </div>
-                        <div class="col-sm-6 py-2">
+                        <div class="col-12 col-lg-6 py-2">
                             <h6>Email: <span class="text-secondary">everton_dev@hotmail.com</span></h6>
                         </div>
-                        <div class="col-sm-6 py-2">
+                        <div class="col-12 col-lg-6 py-2">
                             <h6>Localização: <span class="text-secondary">São Paulo, Brasil</span></h6>
                         </div>
                     </div>
